@@ -20,9 +20,9 @@ const IndexPage = ({ data }) => (
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={12} style={{maxWidth:`960px`}}>
+      <Col xs={12} md={8} style={{maxWidth:`960px`}}>
         <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事20:54</Col>
+          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事21:16</Col>
         </Row>
         <Row>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -52,41 +52,43 @@ const IndexPage = ({ data }) => (
         ))}
         </Row>
       </Col>
-    </Row>
-    <Row>
-      <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`,marginTop:`2rem`}}>SNS</Col>
-    </Row>
-    <Row>
-      <Col style={{maxWidth:`960px`}}>
+      <Col xs={12} md={4} style={{maxWidth:`960px`}}>
         <Row>
-          <Col style={{textAlign:'center'}}>
-            <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`}} />
+          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`,marginTop:`2rem`}}>SNS</Col>
+        </Row>
+        <Row>
+          <Col style={{maxWidth:`960px`}}>
+            <Row>
+              <Col style={{textAlign:'center'}}>
+                <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`}} />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={12} style={{textAlign:'center'}}>
+                <div class="twitter">
+                <a 
+                  href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-show-count="true"
+                  data-lang="ja">Follow @amamiya_couple
+                </a>
+                {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>雨宮夫</Col>
+            </Row>
+            <Row>
+              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>1987年生まれのサラリーマンです。</Col>
+            </Row>
+            <Row>
+              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>時価総額10兆円越え企業に勤務しています。</Col>
+            </Row>
+            <Row>
+              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
+            </Row>
           </Col>
-        </Row>
-        <Row>
-          <Col xs={12} md={12} style={{textAlign:'center'}}>
-            <div class="twitter">
-            <a 
-              href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
-              class="twitter-follow-button"
-              data-show-count="true"
-              data-lang="ja">Follow @amamiya_couple
-            </a>
-            {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>雨宮夫</Col>
-        </Row>
-        <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>1987年生まれのサラリーマンです。</Col>
-        </Row>
-        <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>時価総額10兆円越え企業に勤務しています。</Col>
-        </Row>
-        <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
         </Row>
       </Col>
     </Row>
