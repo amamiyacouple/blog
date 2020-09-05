@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={12} style={{maxWidth:`480px`}}>
+      <Col xs={12} md={12} style={{maxWidth:`960px`}}>
         <Row>
           <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事</Col>
         </Row>
@@ -41,19 +41,18 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <Col xs={12} md={12}>
-            <Card style={{marginTop:`1rem`}}>
-              <Card.Img variant="top" src={twitter_husbandImg} alt={`Twitter`} />
-              <Card.Body>
-              </Card.Body>
-            </Card>
+          <img src={twitter_husbandImg} style={{width:`100%`,padding:`0.5rem`}} />
+        </Row>
+        <Row>
+          <Col xs={12} md={12} style={{}}>
             <div class="twitter">
-              <a
+            <a 
               href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
               class="twitter-follow-button"
               data-show-count="true"
-              data-lang="ja">Follow @amamiya_couple</a>
-              {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+              data-lang="ja">Follow @amamiya_couple
+            </a>
+            {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
             </div>
           </Col>
         </Row>
