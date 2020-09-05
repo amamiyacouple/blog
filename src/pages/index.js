@@ -62,14 +62,6 @@ const IndexPage = ({ data }) => (
               <Card.Img variant="top" src={twitter_husbandImg} alt={`Twitter`} />
               <Card.Body>
                 <Card.Title style={{fontSize:`1rem`}}>https://twitter.com/amamiya_couple</Card.Title>
-                <div class="twitter">
-                 <a
-                  href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-show-count="true"
-                  data-lang="ja">Follow @amamiya_couple</a>
-                  {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
-                </div>
               </Card.Body>
             </Card>
           </Col>
