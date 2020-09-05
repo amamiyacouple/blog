@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
                   </Row>
                   <Row style={{textAlign:'right'}}>
                     <Card.Text>
-                      Updated{node.frontmatter.date}
+                      ⌚{node.frontmatter.date}
                     </Card.Text>
                   </Row>
                 </Card.Body>
