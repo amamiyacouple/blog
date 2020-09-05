@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col xs={12} md={8} style={{maxWidth:`640px`,textAlign:'center'}}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Card style={{marginTop:'1rem'}}>
+          <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
               <Row>
                 <Card.Title>
@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => (
         ))}
       </Col>
       <Col xs={12} md={4} style={{maxWidth:`320px`,textAlign:'center'}}>
-        <Row style={{maxWidth:`280px`,borderColor:'black',color:`white`,padding:`0.5rem`}}>
+        <Row style={{maxWidth:`280px`,borderWidth:'1',borderColor:'black',color:'black',padding:`0.5rem`}}>
           <Col style={{textAlign:'center'}}>
             書いている人
           </Col>
@@ -51,6 +51,11 @@ const IndexPage = ({ data }) => (
         <Row>
           <Col style={{textAlign:'center'}}>
             <img src={twitter_husbandImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            雨宮夫
           </Col>
         </Row>
         <Row>
@@ -67,22 +72,17 @@ const IndexPage = ({ data }) => (
           </Col>
         </Row>
         <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
-            雨宮夫
-          </Col>
-        </Row>
-        <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
             1987年生まれのサラリーマンです。
             </Col>
         </Row>
         <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
             時価総額10兆円越え企業に勤務しています。
             </Col>
         </Row>
         <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
             資産運用/勉強/仕事/転職/婚活術について発信しています。
           </Col>
         </Row>
