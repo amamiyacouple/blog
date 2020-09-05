@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col xs={12} md={8} style={{maxWidth:`640px`,textAlign:'center'}}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Card style={{marginTop:'1rem'}}>
+          <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
               <Row>
                 <Card.Title>
@@ -72,17 +72,17 @@ const IndexPage = ({ data }) => (
           </Col>
         </Row>
         <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
             1987年生まれのサラリーマンです。
             </Col>
         </Row>
         <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
             時価総額10兆円越え企業に勤務しています。
             </Col>
         </Row>
         <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
             資産運用/勉強/仕事/転職/婚活術について発信しています。
           </Col>
         </Row>
