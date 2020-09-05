@@ -54,6 +54,11 @@ const IndexPage = ({ data }) => (
           </Col>
         </Row>
         <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            雨宮夫
+          </Col>
+        </Row>
+        <Row>
           <Col style={{textAlign:'center'}}>
             <div class="twitter">
               <a 
@@ -64,11 +69,6 @@ const IndexPage = ({ data }) => (
               </a>
               {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
             </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
-            雨宮夫
           </Col>
         </Row>
         <Row>
