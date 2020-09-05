@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col style={{padding:`0.5rem`}}>
               <Link to={`/${node.fields.slug}`}>
-              {node.frontmatter.date}更新{`　`}{node.frontmatter.title}
+              {node.frontmatter.title}{`　`}{node.frontmatter.date}更新
               </Link>
             </Col>
           </Row>
@@ -41,7 +41,9 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <img src={twitter_husbandImg} style={{maxwidth:`240px`,padding:`0.5rem`,alignItems:'center'}} />
+          <Col style={{textAlign:'center'}}>
+            <img src={twitter_husbandImg} style={{maxwidth:`120px`,padding:`0.5rem`}} />
+          </Col>
         </Row>
         <Row>
           <Col xs={12} md={12} style={{textAlign:'center'}}>
@@ -81,7 +83,7 @@ export default IndexPage;
 export const query = graphql`
 query {
     allMarkdownRemark(
-        limit: 4, sort: {fields: [frontmatter___date], order: DESC}) {
+        limit: 5, sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           frontmatter {
