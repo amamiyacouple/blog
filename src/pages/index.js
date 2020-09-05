@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={8} style={{maxWidth:`960px`,textAlign:'center'}}>
+      <Col xs={12} md={8} style={{maxWidth:`640px`,textAlign:'center'}}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card style={{marginTop:'1rem'}}>
             <Card.Body>
@@ -33,15 +33,15 @@ const IndexPage = ({ data }) => (
               </Row>
               <Row style={{textAlign:'right'}}>
                 <Card.Text>
-                  ⌚{node.frontmatter.date}
+                  <Col style={{textAlign:'right'}}>⌚{node.frontmatter.date}</Col>
                 </Card.Text>
               </Row>
             </Card.Body>
           </Card>
         ))}
       </Col>
-      <Col xs={12} md={4} style={{maxWidth:`960px`,textAlign:'center'}}>
-        <Row style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>
+      <Col xs={12} md={4} style={{maxWidth:`320px`,textAlign:'center'}}>
+        <Row style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,textAlign:'center'}}>
           書いている人
         </Row>
         <Row>
