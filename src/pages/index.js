@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={8} style={{maxWidth:`640px`,textAlign:'center'}}>
+      <Col xs={12} md={6} style={{maxWidth:`480px`}}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card style={{marginTop:'1rem'}}>
             <Card.Body>
@@ -31,21 +31,25 @@ const IndexPage = ({ data }) => (
                   </Link>
                 </Card.Title>
               </Row>
-              <Row style={{textAlign:'right'}}>
-                <Card.Text>
-                  <Col style={{textAlign:'right'}}>⌚{node.frontmatter.date}</Col>
-                </Card.Text>
+              <Row>
+                <Col style={{textAlign:'right'}}>
+                  <Card.Text>
+                    ⌚{node.frontmatter.date}
+                  </Card.Text>
+                </Col>
               </Row>
             </Card.Body>
           </Card>
         ))}
       </Col>
-      <Col xs={12} md={4} style={{maxWidth:`320px`,textAlign:'center'}}>
-        <Row style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,textAlign:'center'}}>
-          書いている人
+      <Col xs={12} md={6} style={{maxWidth:`480px`}}>
+        <Row style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>
+          <Col style={{textAlign:'center'}}>
+            書いている人
+          </Col>
         </Row>
         <Row>
-          <img src={twitter_husbandImg} style={{maxWidth:`20%`,padding:`0.5rem`}} />
+          <img src={twitter_husbandImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
         </Row>
         <Row>
           <div class="twitter">
