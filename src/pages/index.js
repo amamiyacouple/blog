@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <img src={twitter_husbandImg} style={{width:`100%`,padding:`0.5rem`}} />
+          <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`}} />
         </Row>
         <Row>
           <Col xs={12} md={12} style={{alignContent:'center'}}>
@@ -60,10 +60,10 @@ const IndexPage = ({ data }) => (
           <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>1987年生まれのサラリーマンです。</Col>
         </Row>
         <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>時価総額10兆円越え企業に勤務しています。</Col>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>時価総額10兆円越え企業に勤務しています。</Col>
         </Row>
         <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
         </Row>
       </Col>
     </Row>
