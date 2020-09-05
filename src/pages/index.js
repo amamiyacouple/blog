@@ -41,10 +41,10 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <img src={twitter_husbandImg} style={{width:`100%`,padding:`0.5rem`,align="center"}} />
+          <img src={twitter_husbandImg} style={{width:`100%`,padding:`0.5rem`}} />
         </Row>
         <Row>
-          <Col xs={12} md={12} style={{align="center"}}>
+          <Col xs={12} md={12} style={{}}>
             <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
@@ -57,13 +57,13 @@ const IndexPage = ({ data }) => (
           </Col>
         </Row>
         <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,align="center"}}>1987年生まれのサラリーマンです。</Col>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>1987年生まれのサラリーマンです。</Col>
         </Row>
         <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,align="center"}}>時価総額10兆円越え企業に勤務しています。</Col>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>時価総額10兆円越え企業に勤務しています。</Col>
         </Row>
         <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,align="center"}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
         </Row>
       </Col>
     </Row>
