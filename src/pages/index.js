@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => (
         ))}
       </Col>
       <Col xs={12} md={4} style={{maxWidth:`320px`,textAlign:'center'}}>
-        <Row style={{borderColor:'black',color:`white`,padding:`0.5rem`}}>
+        <Row style={{maxWidth:`280px`,borderColor:'black',color:`white`,padding:`0.5rem`}}>
           <Col style={{textAlign:'center'}}>
             書いている人
           </Col>
