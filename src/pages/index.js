@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`}} />
+          <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`,textAlign:'center'}} />
         </Row>
         <Row>
           <Col xs={12} md={12} style={{textAlign:'center'}}>
@@ -55,6 +55,9 @@ const IndexPage = ({ data }) => (
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
             </div>
           </Col>
+        </Row>
+        <Row>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>雨宮夫</Col>
         </Row>
         <Row>
           <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>1987年生まれのサラリーマンです。</Col>
