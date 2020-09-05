@@ -3,13 +3,13 @@ import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
-import image from "../components/image"
+//import image from "../components/image"
 //import header_wifeImg from "../images/header_wife.jpg"
 import header_husbandImg from "../images/header_husband.jpg"
 import twitter_husbandImg from "../images/icon_husband.png"
 //import jigyo1Img from "../images/jigyo1.jpg"
-import jigyo2Img from "../images/jigyo2.jpg"
-import jigyo3Img from "../images/jigyo3.jpg"
+//import jigyo2Img from "../images/jigyo2.jpg"
+//import jigyo3Img from "../images/jigyo3.jpg"
 
 //        <img src={header_wifeImg} style={{width:`100%`,marginBottom:`0rem`}} />
 
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col style={{padding:`0.5rem`}}>
               <Link to={`/${node.fields.slug}`}>
-              {node.frontmatter.date}記事{`　`}{node.frontmatter.title}
+              {node.frontmatter.date}更新{`　`}{node.frontmatter.title}
               </Link>
             </Col>
           </Row>
@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => (
           <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`}} />
         </Row>
         <Row>
-          <Col xs={12} md={12} style={{alignContent:'center'}}>
+          <Col xs={12} md={12} style={{textAlign:'center'}}>
             <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
