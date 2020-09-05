@@ -41,12 +41,9 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <Col xs={12} md={12} style={{align="center"}}>
-            <Card style={{marginTop:`1rem`,padding:`0.5rem`,maxWidth:`240px`,}}>
-              <Card.Img variant="top" src={twitter_husbandImg} alt={`Twitter`} />
-            </Card>
-          </Col>
+          <img src={twitter_husbandImg} style={{width:`100%`,padding:`0.5rem`,align="center"}} />
         </Row>
+        <Row>
           <Col xs={12} md={12} style={{align="center"}}>
             <div class="twitter">
             <a 
@@ -58,6 +55,7 @@ const IndexPage = ({ data }) => (
             {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
             </div>
           </Col>
+        </Row>
         <Row>
           <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,align="center"}}>1987年生まれのサラリーマンです。</Col>
         </Row>
