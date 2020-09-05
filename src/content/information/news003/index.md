@@ -1,4 +1,5 @@
 ---
+hero: ./naphthalene.jpg
 title: "ナフタレン分子での電子軌道の固定化に成功"
 date: "2132-10-02"
 ---
