@@ -4,24 +4,25 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
 import image from "../components/image"
-import header_wifeImg from "../images/header_wife.jpg"
+//import header_wifeImg from "../images/header_wife.jpg"
 import header_husbandImg from "../images/header_husband.jpg"
 import twitter_husbandImg from "../images/icon_husband.png"
 //import jigyo1Img from "../images/jigyo1.jpg"
 import jigyo2Img from "../images/jigyo2.jpg"
 import jigyo3Img from "../images/jigyo3.jpg"
 
+//        <img src={header_wifeImg} style={{width:`100%`,marginBottom:`0rem`}} />
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Row style={{maxWidth:`960px`}}> 
-        <img src={header_wifeImg} style={{width:`100%`,marginBottom:`0rem`}} />
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={6} style={{maxWidth:`480px`}}>
+      <Col xs={12} md={12} style={{maxWidth:`480px`}}>
         <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>最新記事</Col>
+          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事</Col>
         </Row>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Row>
@@ -33,23 +34,6 @@ const IndexPage = ({ data }) => (
           </Row>
         ))}
       </Col>
-      <Col xs={12} md={6} style={{maxWidth:`480px`}}>
-        <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>書いている人</Col>
-        </Row>
-        <Row>
-          <Col style={{padding:`0.5rem`}}>プロフィール</Col>
-        </Row>
-        <Row>
-          <Col style={{padding:`0.5rem`}}>SNS</Col>
-        </Row>
-        <Row>
-          <Col style={{padding:`0.5rem`}}>広告スペース</Col>
-        </Row>
-        <Row>
-          <Col style={{padding:`0.5rem`}}>広告スペース</Col>
-        </Row>
-      </Col>
     </Row>
     <Row>
       <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`,marginTop:`2rem`}}>SNS</Col>
@@ -57,38 +41,30 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col style={{maxWidth:`960px`}}>
         <Row>
-          <Col xs={6} md={4}>
+          <Col xs={12} md={12}>
             <Card style={{marginTop:`1rem`}}>
               <Card.Img variant="top" src={twitter_husbandImg} alt={`Twitter`} />
               <Card.Body>
-                <Card.Title style={{fontSize:`1rem`}}>https://twitter.com/amamiya_couple</Card.Title>
-                <div class="twitter">
-                 <a
-                  href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-show-count="true"
-                  data-lang="ja">Follow @amamiya_couple</a>
-                  {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
-                </div>
               </Card.Body>
             </Card>
+            <div class="twitter">
+              <a
+              href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
+              class="twitter-follow-button"
+              data-show-count="true"
+              data-lang="ja">Follow @amamiya_couple</a>
+              {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+            </div>
           </Col>
-          <Col xs={6} md={4}>
-            <Card style={{marginTop:`1rem`}}>
-              <Card.Img variant="top" src={jigyo2Img} alt={`テレポーテーションゲート開設`} />
-              <Card.Body>
-                <Card.Title style={{fontSize:`1rem`}}>テレポーテーションゲート開設</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={6} md={4}>
-            <Card style={{marginTop:`1rem`}}>
-              <Card.Img variant="top" src={jigyo3Img} alt={`業子力学による量子コントロール`} />
-              <Card.Body>
-                <Card.Title style={{fontSize:`1rem`}}>業子力学による量子コントロール</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
+        </Row>
+        <Row>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>1987年生まれのサラリーマンです。</Col>
+        </Row>
+        <Row>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>時価総額10兆円越え企業に勤務しています。</Col>
+        </Row>
+        <Row>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
         </Row>
       </Col>
     </Row>
