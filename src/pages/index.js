@@ -49,30 +49,42 @@ const IndexPage = ({ data }) => (
           </Col>
         </Row>
         <Row>
-          <img src={twitter_husbandImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
+          <Col style={{textAlign:'center'}}>
+            <img src={twitter_husbandImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
+          </Col>
         </Row>
         <Row>
-          <div class="twitter">
-            <a 
-              href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
-              class="twitter-follow-button"
-              data-show-count="true"
-              data-lang="ja">Follow @amamiya_couple
-            </a>
-            {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
-          </div>
+          <Col style={{textAlign:'center'}}>
+            <div class="twitter">
+              <a 
+                href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
+                class="twitter-follow-button"
+                data-show-count="true"
+                data-lang="ja">Follow @amamiya_couple
+              </a>
+              {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+            </div>
+          </Col>
         </Row>
-        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
-          雨宮夫
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            雨宮夫
+          </Col>
         </Row>
-        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>
-          1987年生まれのサラリーマンです。
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            1987年生まれのサラリーマンです。
+            </Col>
         </Row>
-        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>
-          時価総額10兆円越え企業に勤務しています。
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            時価総額10兆円越え企業に勤務しています。
+            </Col>
         </Row>
-        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>
-          資産運用/勉強/仕事/転職/婚活術について発信しています。
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            資産運用/勉強/仕事/転職/婚活術について発信しています。
+          </Col>
         </Row>
       </Col>
     </Row>
