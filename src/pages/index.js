@@ -20,72 +20,57 @@ const IndexPage = ({ data }) => (
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={8} style={{maxWidth:`960px`}}>
+      <Col xs={12} md={8} style={{maxWidth:`960px`,textAlign:'center'}}>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Card style={{marginTop:'1rem'}}>
+            <Card.Body>
+              <Row>
+                <Card.Title>
+                  <Link to={`/${node.fields.slug}`}>
+                    {node.frontmatter.title}
+                  </Link>
+                </Card.Title>
+              </Row>
+              <Row style={{textAlign:'right'}}>
+                <Card.Text>
+                  ⌚{node.frontmatter.date}
+                </Card.Text>
+              </Row>
+            </Card.Body>
+          </Card>
+        ))}
+      </Col>
+      <Col xs={12} md={4} style={{maxWidth:`960px`,textAlign:'center'}}>
+        <Row style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>
+          書いている人
+        </Row>
         <Row>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Card style={{marginTop:'1rem'}}>
-              <Card.Body>
-                <Row>
-                  <Card.Title>
-                    <Link to={`/${node.fields.slug}`}>
-                      {node.frontmatter.title}
-                    </Link>
-                  </Card.Title>
-                </Row>
-                <Row style={{textAlign:'right'}}>
-                  <Card.Text>
-                    ⌚{node.frontmatter.date}
-                  </Card.Text>
-                </Row>
-              </Card.Body>
-            </Card>
-          ))}
+          <img src={twitter_husbandImg} style={{maxWidth:`20%`,padding:`0.5rem`}} />
+        </Row>
+        <Row>
+          <div class="twitter">
+            <a 
+              href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
+              class="twitter-follow-button"
+              data-show-count="true"
+              data-lang="ja">Follow @amamiya_couple
+            </a>
+            {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+          </div>
+        </Row>
+        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+          雨宮夫
+        </Row>
+        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>
+          1987年生まれのサラリーマンです。
+        </Row>
+        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>
+          時価総額10兆円越え企業に勤務しています。
+        </Row>
+        <Row style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>
+          資産運用/勉強/仕事/転職/婚活術について発信しています。
         </Row>
       </Col>
-      <Col xs={12} md={4} style={{maxWidth:`960px`}}>
-        <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`,textAlign:'center'}}>
-            書いている人
-          </Col>
-        </Row>
-        <Row>
-          <Col style={{maxWidth:`960px`}}>
-            <Row>
-              <Col style={{textAlign:'center'}}>
-                <img src={twitter_husbandImg} style={{Width:`30%`,padding:`0.5rem`}} />
-              </Col>
-            </Row>
-            <Row>
-              <Col style={{textAlign:'center'}}>
-                <div class="twitter">
-                <a 
-                  href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-show-count="true"
-                  data-lang="ja">Follow @amamiya_couple
-                </a>
-                {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>雨宮夫</Col>
-            </Row>
-            <Row>
-              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>1987年生まれのサラリーマンです。</Col>
-            </Row>
-            <Row>
-              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>時価総額10兆円越え企業に勤務しています。</Col>
-            </Row>
-            <Row>
-              <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>資産運用/勉強/仕事/転職/婚活術について発信しています。</Col>
-            </Row>
-          </Col>
-        </Row>
-      </Col>
-    </Row>
-    <Row>
-      <Col style={{maxWidth:`960px`, paddingTop:`3rem`}}></Col>
     </Row>
   </Layout>
 );
