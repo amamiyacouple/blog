@@ -22,11 +22,8 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col xs={12} md={8} style={{maxWidth:`960px`}}>
         <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事21:16</Col>
-        </Row>
-        <Row>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col xs={12} md={12} style={{padding:`0.5rem`}} key={node.fields.slug}>
+            <Col style={{padding:`0.5rem`}} key={node.fields.slug}>
               <Card style={{marginTop:'1rem'}}>
                 <Card.Body>
                   <Row>
@@ -41,9 +38,9 @@ const IndexPage = ({ data }) => (
                       {node.excerpt}
                     </Card.Text>
                   </Row>
-                  <Row>
-                    <Card.Text style={{textAlign:'right'}}>
-                      {`　`}{node.frontmatter.date}更新
+                  <Row style={{textAlign:'right'}}>
+                    <Card.Text>
+                      Updated{node.frontmatter.date}
                     </Card.Text>
                   </Row>
                 </Card.Body>
@@ -54,7 +51,9 @@ const IndexPage = ({ data }) => (
       </Col>
       <Col xs={12} md={4} style={{maxWidth:`960px`}}>
         <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`,marginTop:`2rem`}}>SNS</Col>
+          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`}}>
+            書いている人
+          </Col>
         </Row>
         <Row>
           <Col style={{maxWidth:`960px`}}>
@@ -64,7 +63,7 @@ const IndexPage = ({ data }) => (
               </Col>
             </Row>
             <Row>
-              <Col xs={12} md={12} style={{textAlign:'center'}}>
+              <Col style={{textAlign:'center'}}>
                 <div class="twitter">
                 <a 
                   href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
@@ -108,7 +107,7 @@ query {
         node {
           frontmatter {
             title
-            date(formatString: "YYYY年MM月DD日")
+            date(formatString: "YYYY/MM/DD")
             hero {
               childImageSharp {
                 fixed(width:128,height:128){
