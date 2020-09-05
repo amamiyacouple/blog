@@ -26,20 +26,26 @@ const IndexPage = ({ data }) => (
         </Row>
         <Row>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col xs={12} md={12} style={{padding:`0.5rem`}}>
+            <Col xs={12} md={12} style={{padding:`0.5rem`}} key={node.fields.slug}>
               <Card style={{marginTop:'1rem'}}>
                 <Card.Body>
-                  <Card.Title>
-                    <Link to={`/${node.fields.slug}`}>
-                      {node.frontmatter.title}
-                    </Link>
-                  </Card.Title>
-                  <Card.Text>
-                    {node.excerpt}
-                  </Card.Text>
-                  <Card.Text style={{textAlign:'left'}}>
-                    {`　`}{node.frontmatter.date}更新
-                  </Card.Text>
+                  <Row>
+                    <Card.Title>
+                      <Link to={`/${node.fields.slug}`}>
+                        {node.frontmatter.title}
+                      </Link>
+                    </Card.Title>
+                  </Row>
+                  <Row>
+                    <Card.Text>
+                      {node.excerpt}
+                    </Card.Text>
+                  </Row>
+                  <Row>
+                    <Card.Text style={{textAlign:'right'}}>
+                      {`　`}{node.frontmatter.date}更新
+                    </Card.Text>
+                  </Row>
                 </Card.Body>
               </Card>
             </Col>
