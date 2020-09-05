@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => (
           <img src={twitter_husbandImg} style={{width:`100%`,padding:`0.5rem`}} />
         </Row>
         <Row>
-          <Col xs={12} md={12} style={{}}>
+          <Col xs={12} md={12} style={{alignContent:'center'}}>
             <div class="twitter">
             <a 
               href="https://twitter.com/amamiya_couple?ref_src=twsrc%5Etfw"
@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => (
           </Col>
         </Row>
         <Row>
-          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>1987年生まれのサラリーマンです。</Col>
+          <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`,textAlign:'center'}}>1987年生まれのサラリーマンです。</Col>
         </Row>
         <Row>
           <Col style={{backgroundColor:`white`,color:`black`,padding:`0.5rem`}}>時価総額10兆円越え企業に勤務しています。</Col>
