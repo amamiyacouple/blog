@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
     <Row>
       <Col xs={12} md={12} style={{maxWidth:`960px`}}>
         <Row>
-          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事</Col>
+          <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事20:22</Col>
         </Row>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Row>
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => (
       <Col style={{maxWidth:`960px`}}>
         <Row>
           <Col style={{textAlign:'center'}}>
-            <img src={twitter_husbandImg} style={{maxwidth:`60px`,padding:`0.5rem`}} />
+            <img src={twitter_husbandImg} style={{width:`20%`,padding:`0.5rem`}} />
           </Col>
         </Row>
         <Row>
