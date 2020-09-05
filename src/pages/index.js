@@ -20,31 +20,29 @@ const IndexPage = ({ data }) => (
         <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
     </Row>
     <Row>
-      <Col xs={12} md={6} style={{maxWidth:`960px`}}>
+      <Col xs={12} md={8} style={{maxWidth:`960px`}}>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Col xs={12} md={6} style={{padding:`0.5rem`}} key={node.fields.slug}>
-              <Card style={{marginTop:'1rem'}}>
-                <Card.Body>
-                  <Row>
-                    <Card.Title>
-                      <Link to={`/${node.fields.slug}`}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </Card.Title>
-                  </Row>
-                  <Row style={{textAlign:'right'}}>
-                    <Card.Text>
-                      ⌚{node.frontmatter.date}
-                    </Card.Text>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
+            <Card style={{marginTop:'1rem'}}>
+              <Card.Body>
+                <Row>
+                  <Card.Title>
+                    <Link to={`/${node.fields.slug}`}>
+                      {node.frontmatter.title}
+                    </Link>
+                  </Card.Title>
+                </Row>
+                <Row style={{textAlign:'right'}}>
+                  <Card.Text>
+                    ⌚{node.frontmatter.date}
+                  </Card.Text>
+                </Row>
+              </Card.Body>
+            </Card>
           ))}
         </Row>
       </Col>
-      <Col xs={12} md={6} style={{maxWidth:`960px`}}>
+      <Col xs={12} md={4} style={{maxWidth:`960px`}}>
         <Row>
           <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`,maxWidth:`960px`,textAlign:'center'}}>
             書いている人
@@ -54,7 +52,7 @@ const IndexPage = ({ data }) => (
           <Col style={{maxWidth:`960px`}}>
             <Row>
               <Col style={{textAlign:'center'}}>
-                <img src={twitter_husbandImg} style={{Width:`60px`,padding:`0.5rem`}} />
+                <img src={twitter_husbandImg} style={{Width:`30%`,padding:`0.5rem`}} />
               </Col>
             </Row>
             <Row>
