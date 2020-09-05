@@ -24,15 +24,27 @@ const IndexPage = ({ data }) => (
         <Row>
           <Col style={{backgroundColor:`cornflowerblue`,color:`white`,padding:`0.5rem`}}>記事20:22</Col>
         </Row>
+        <Row>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Row>
             <Col style={{padding:`0.5rem`}}>
-              <Link to={`/${node.fields.slug}`}>
-              {node.frontmatter.title}{`　`}{node.frontmatter.date}更新
-              </Link>
+              <Card>
+                <Card.Body>
+                  <Card.Title>
+                    <Link to={`/${node.fields.slug}`}>
+                      {node.frontmatter.title}
+                    </Link>
+                  </Card.Title>
+                  <Card.Text>
+                    {node.excerpt}
+                  </Card.Text>
+                  <Card.Text>
+                    {`　`}{node.frontmatter.date}更新
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
-          </Row>
         ))}
+        </Row>
       </Col>
     </Row>
     <Row>
