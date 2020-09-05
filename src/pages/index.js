@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => (
       <Col style={{maxWidth:`960px`}}>
         <Row>
           <Col style={{textAlign:'center'}}>
-            <img src={twitter_husbandImg} style={{maxwidth:`120px`,padding:`0.5rem`}} />
+            <img src={twitter_husbandImg} style={{maxwidth:`60px`,padding:`0.5rem`}} />
           </Col>
         </Row>
         <Row>
@@ -89,6 +89,13 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY年MM月DD日")
+            hero {
+              childImageSharp {
+                fixed(width:128,height:128){
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
           fields {
             slug
