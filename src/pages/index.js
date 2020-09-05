@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => (
         </Row>
         <Row>
           <Col style={{textAlign:'center'}}>
-            <img src={twitter_husbandImg} style={{maxWidth:`50%`,padding:`0.5rem`}} />
+            <img src={twitter_husbandImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
           </Col>
         </Row>
         <Row>
