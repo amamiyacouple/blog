@@ -87,14 +87,14 @@ query {
       edges {
         node {
           frontmatter {
+            title
+            date(formatString: "YYYY年MM月DD日")
             hero {
               childImageSharp {
                 fixed(width:128,height:128){
                   ...GatsbyImageSharpFixed
                 }
               }
-            title
-            date(formatString: "YYYY年MM月DD日")
             }
           }
           fields {
