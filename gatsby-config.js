@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://yah-space.tech`,
   },
   plugins: [
-    `gatsby-plugin-twitter`,
+//    `gatsby-plugin-twitter`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
