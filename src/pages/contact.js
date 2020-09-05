@@ -20,7 +20,6 @@ const ContactPage = () => (
             <Container className="" style={{width:`80%`}}>
             <Row>
                 <Col>
-                    <p>（※このサンプルサイトで送信機能は使用できません）</p>
                     <Form>
                     <Form.Group controlId="formBasicText">
                         <Form.Control type="text" as="input" placeholder="お名前" name="name" required />

@@ -17,13 +17,8 @@ const Header = ({ siteTitle }) => (
           </Nav.Link>
         </NavItem>
         <NavItem href="/about">
-          <Nav.Link as={Link} activeClassName="active" to="/jigyo">
-            SNS
-          </Nav.Link>
-        </NavItem>
-        <NavItem href="/about">
           <Nav.Link as={Link} activeClassName="active" to="/information">
-            最新記事
+            記事
           </Nav.Link>
         </NavItem>
         <NavItem href="/about">
