@@ -24,27 +24,22 @@ const IndexPage = ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
-              <Col xs={12} md={6}>
-                <Card.Img variant="left" src={twitter_husbandImg}/>
-              </Col>
-              <Col xs={12} md={6}>
-                <Row>
-                  <Col style={{textAlign:'left'}}>
-                    <Card.Title style={{fontWeight:'bold'}}>
-                      <Link to={`/${node.fields.slug}`}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </Card.Title>
-                    </Col>
-                </Row>
-                <Row>
-                  <Col style={{textAlign:'right'}}>
-                    <Card.Text>
-                      ⌚{node.frontmatter.date}
-                    </Card.Text>
+              <Row>
+                <Col style={{textAlign:'left'}}>
+                  <Card.Title style={{fontWeight:'bold'}}>
+                    <Link to={`/${node.fields.slug}`}>
+                      {node.frontmatter.title}
+                    </Link>
+                  </Card.Title>
                   </Col>
-                </Row>
-              </Col>
+              </Row>
+              <Row>
+                <Col style={{textAlign:'right'}}>
+                  <Card.Text>
+                    ⌚{node.frontmatter.date}
+                  </Card.Text>
+                </Col>
+              </Row>
             </Card.Body>
           </Card>
         ))}
@@ -113,8 +108,8 @@ query {
             date(formatString: "YYYY/MM/DD")
             hero {
               childImageSharp {
-                fixed(width:128,height:128){
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 960) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
