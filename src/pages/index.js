@@ -3,7 +3,7 @@ import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
-import image from "../components/image"
+//import image from "../components/image"
 //import header_wifeImg from "../images/header_wife.jpg"
 import header_husbandImg from "../images/header_husband.jpg"
 import twitter_husbandImg from "../images/icon_husband.png"
@@ -24,29 +24,22 @@ const IndexPage = ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
-              <Col xs={12} md={6}>
-                <Card.Img variant="left">
-                  {node.frontmatter.hero}
-                </Card.Img>
-              </Col>
-              <Col xs={12} md={6}>
-                <Row>
-                  <Col style={{textAlign:'left'}}>
-                    <Card.Title style={{fontWeight:'bold'}}>
-                      <Link to={`/${node.fields.slug}`}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </Card.Title>
-                    </Col>
-                </Row>
-                <Row>
-                  <Col style={{textAlign:'right'}}>
-                    <Card.Text>
-                      ⌚{node.frontmatter.date}
-                    </Card.Text>
+              <Row>
+                <Col style={{textAlign:'left'}}>
+                  <Card.Title style={{fontWeight:'bold'}}>
+                    <Link to={`/${node.fields.slug}`}>
+                      {node.frontmatter.title}
+                    </Link>
+                  </Card.Title>
                   </Col>
-                </Row>
-              </Col>
+              </Row>
+              <Row>
+                <Col style={{textAlign:'right'}}>
+                  <Card.Text>
+                    ⌚{node.frontmatter.date}
+                  </Card.Text>
+                </Col>
+              </Row>
             </Card.Body>
           </Card>
         ))}
