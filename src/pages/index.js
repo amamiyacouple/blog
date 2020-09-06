@@ -12,6 +12,7 @@ import twitter_husbandImg from "../images/icon_husband.png"
 //import jigyo3Img from "../images/jigyo3.jpg"
 
 //        <img src={header_wifeImg} style={{width:`100%`,marginBottom:`0rem`}} />
+//<Image filename="gatsby-astronaut.png" alt="Gatsbyスペースマン" />
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -106,7 +107,7 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY/MM/DD")
-            hero {
+            img {
               childImageSharp {
                 fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid
