@@ -24,23 +24,27 @@ const IndexPage = ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
-              <Row>
-                <Col style={{textAlign:'left'}}>
-                  <Card.Img variant="left" src={node.frontmatter.hero}/>
-                  <Card.Title style={{fontWeight:'bold'}}>
-                    <Link to={`/${node.fields.slug}`}>
-                      {node.frontmatter.title}
-                    </Link>
-                  </Card.Title>
+              <Col xs={12} md={6}>
+                <Card.Img variant="left" src={twitter_husbandImg}/>
+              </Col>
+              <Col xs={12} md={6}>
+                <Row>
+                  <Col style={{textAlign:'left'}}>
+                    <Card.Title style={{fontWeight:'bold'}}>
+                      <Link to={`/${node.fields.slug}`}>
+                        {node.frontmatter.title}
+                      </Link>
+                    </Card.Title>
+                    </Col>
+                </Row>
+                <Row>
+                  <Col style={{textAlign:'right'}}>
+                    <Card.Text>
+                      ⌚{node.frontmatter.date}
+                    </Card.Text>
                   </Col>
-              </Row>
-              <Row>
-                <Col style={{textAlign:'right'}}>
-                  <Card.Text>
-                    ⌚{node.frontmatter.date}
-                  </Card.Text>
-                </Col>
-              </Row>
+                </Row>
+              </Col>
             </Card.Body>
           </Card>
         ))}
