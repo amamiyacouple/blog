@@ -3,7 +3,7 @@ import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
-//import image from "../components/image"
+import image from "../components/image"
 //import header_wifeImg from "../images/header_wife.jpg"
 import header_husbandImg from "../images/header_husband.jpg"
 import twitter_husbandImg from "../images/icon_husband.png"
