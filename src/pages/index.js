@@ -25,7 +25,9 @@ const IndexPage = ({ data }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
               <Col xs={12} md={6}>
-                <Card.Img variant="left" src={node.frontmatter.hero.childImageSharp.fluid}/>
+                <Card.Img variant="left">
+                  {node.frontmatter.hero && (<Image fixed={node.frontmatter.hero.childImageSharp.fixed} />)}
+                </Card.Img>
               </Col>
               <Col xs={12} md={6}>
                 <Row>
