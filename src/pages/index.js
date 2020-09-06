@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
               <Col xs={12} md={6}>
-                <Card.Img variant="left" src={twitter_husbandImg}/>
+                <Card.Img variant="left" src={node.frontmatter.hero.childImageSharp.fluid}/>
               </Col>
               <Col xs={12} md={6}>
                 <Row>
@@ -113,8 +113,8 @@ query {
             date(formatString: "YYYY/MM/DD")
             hero {
               childImageSharp {
-                fixed(width:128,height:128){
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 960) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
