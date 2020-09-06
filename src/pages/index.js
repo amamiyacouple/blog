@@ -25,11 +25,13 @@ const IndexPage = ({ data }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
               <Row>
-                <Card.Title>
-                  <Link to={`/${node.fields.slug}`}>
-                    {node.frontmatter.title}
-                  </Link>
-                </Card.Title>
+                <Col style={{fontWeight:'bold'}}>
+                  <Card.Title>
+                    <Link to={`/${node.fields.slug}`}>
+                      {node.frontmatter.title}
+                    </Link>
+                  </Card.Title>
+                  </Col>
               </Row>
               <Row>
                 <Col style={{textAlign:'right'}}>
@@ -45,8 +47,8 @@ const IndexPage = ({ data }) => (
     </Row>
     <Row>
       <Col xs={12} md={12} style={{maxWidth:`960px`,textAlign:'center'}}>
-        <Row style={{backgroundColor:`cornflowerblue`,padding:`0.5rem`}}>
-          <Col style={{textAlign:'center',color:'white',fontWeight:'bold',border:`solid silver`}}>
+        <Row style={{backgroundColor:`white`,padding:`0.5rem`}}>
+          <Col style={{textAlign:'center',color:'black',fontWeight:'bold',border:'solid 1px silver'}}>
             書いている人
           </Col>
         </Row>
