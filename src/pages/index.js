@@ -27,7 +27,6 @@ const IndexPage = ({ data }) => (
             <Card.Body>
               <Row>
                 <Col style={{textAlign:'left'}}>
-                  <Card.img src={node.frontmatter.img} />
                   <Card.Title style={{fontWeight:'bold'}}>
                     <Link to={`/${node.fields.slug}`}>
                       {node.frontmatter.title}
