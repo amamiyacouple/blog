@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
           </Nav.Link>
         </NavItem>
         <NavItem href="/about">
-          <Nav.Link as={Link} activeClassName="active" to="/contact">
+          <Nav.Link as={Link} activeClassName="active" to="/contact_Netlify">
             お問い合わせ
           </Nav.Link>
         </NavItem>
