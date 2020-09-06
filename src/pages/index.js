@@ -24,6 +24,7 @@ const IndexPage = ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card style={{marginBottom:'1rem'}}>
             <Card.Body>
+              <Card.Img variant="left" src={node.frontmatter.hero}/>
               <Row>
                 <Col style={{textAlign:'left'}}>
                   <Card.Title style={{fontWeight:'bolde'}}>
