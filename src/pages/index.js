@@ -80,7 +80,7 @@ const IndexPage = ({ data }) => (
         </Row>
         <Row>
           <Col style={{padding:`0.5rem`,textAlign:'center'}}>
-            GAFA勤務のバリキャリ妻です。
+            GAFA勤務の妻です。
           </Col>
         </Row>
         <Row>
@@ -118,7 +118,7 @@ const IndexPage = ({ data }) => (
         </Row>
         <Row>
           <Col style={{padding:`0.5rem`,textAlign:'center'}}>
-            時価総額10兆円越え企業勤務のバリキャリ夫です。
+            時価総額10兆円越え企業勤務の夫です。
           </Col>
         </Row>
         <Row>
@@ -128,7 +128,7 @@ const IndexPage = ({ data }) => (
         </Row>
         <Row>
           <Col style={{padding:`0.5rem`,textAlign:'center'}}>
-            資産運用/筋トレ/仕事/転職/婚活術ついて発信しています。
+            仕事/転職/婚活/筋トレ/英語について発信しています。
           </Col>
         </Row>
       </Col>
