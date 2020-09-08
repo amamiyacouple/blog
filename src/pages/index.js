@@ -4,8 +4,9 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
 //import image from "../components/image"
-import header_wifeImg from "../images/header_wife.jpg"
-import header_husbandImg from "../images/header_husband.jpg"
+//import header_wifeImg from "../images/header_wife.jpg"
+//import header_husbandImg from "../images/header_husband.jpg"
+import blogheaderImg from "../images/blogheader2.jpg.png"
 import twitter_husbandImg from "../images/icon_husband.png"
 import twitter_wifeImg from "../images/icon_wife.jpg"
 //import jigyo1Img from "../images/jigyo1.jpg"
@@ -19,12 +20,8 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Row style={{maxWidth:`960px`}}>
-      <Col xs={6} md={6} style={{maxwith:`480px`}}>
-        <img src={header_husbandImg} style={{width:`100%`,marginBottom:`2rem`}} />
-      </Col> 
-      <Col xs={6} md={6} style={{maxwith:`480px`}}>
-        <img src={header_wifeImg} style={{width:`100%`,marginBottom:`2rem`}} />
-      </Col>     </Row>
+      <img src={blogheaderImg} style={{width:`100%`,marginBottom:`2rem`}} />
+    </Row>
     <Row>
       <Col xs={12} md={12} style={{maxWidth:`960px`}}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
