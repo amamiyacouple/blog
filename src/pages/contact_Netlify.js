@@ -5,13 +5,13 @@ import SEO from "../components/seo";
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="お問い合わせ" />
+    <SEO title="お仕事依頼" />
             <Row>
             <Col className="space"></Col>
             </Row>
             <Row>
             <Col className="title-obi">
-                <h1 className="h1-font">お問い合わせ</h1>
+                <h1 className="h1-font">お仕事依頼</h1>
             </Col>
             </Row>
             <Row>
