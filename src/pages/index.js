@@ -7,6 +7,7 @@ import { Link } from "gatsby";
 //import header_wifeImg from "../images/header_wife.jpg"
 import header_husbandImg from "../images/header_husband.jpg"
 import twitter_husbandImg from "../images/icon_husband.png"
+import twitter_wifeImg from "../images/icon_wife.jpg"
 //import jigyo1Img from "../images/jigyo1.jpg"
 //import jigyo2Img from "../images/jigyo2.jpg"
 //import jigyo3Img from "../images/jigyo3.jpg"
@@ -50,10 +51,48 @@ const IndexPage = ({ data }) => (
       <Col xs={12} md={12} style={{maxWidth:`960px`,textAlign:'center'}}>
         <Row style={{backgroundColor:`white`,padding:`0.5rem`}}>
           <Col style={{textAlign:'center',color:'black',fontWeight:'bold',border:'solid 1px silver'}}> 
-            書いている人
+            書いている夫婦
+          </Col>
+        </Row>
+        <Row>         
+          <Col style={{textAlign:'center'}}>
+            <img src={twitter_wifeImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
           </Col>
         </Row>
         <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center',fontWeight:'bold'}}>
+            雨宮妻
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{textAlign:'center'}}>
+            <div class="twitter">
+              <a 
+                href="https://twitter.com/amamiya_wife?ref_src=twsrc%5Etfw" 
+                class="twitter-follow-button" 
+                data-show-count="true"
+                data-lang="ja">Follow @amamiya_wife
+              </a>
+              {<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
+            GAFA勤務のサラリーマンです。
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
+            東京一工卒/英中トリリンガル(TOEIC970/HSK6)です。
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{padding:`0.5rem`,textAlign:'center'}}>
+            資産運用/語学/キャリア/転職/婚活術について発信しています。
+          </Col>
+        </Row>
+        <Row>         
           <Col style={{textAlign:'center'}}>
             <img src={twitter_husbandImg} style={{maxWidth:`30%`,padding:`0.5rem`}} />
           </Col>
@@ -78,17 +117,17 @@ const IndexPage = ({ data }) => (
         </Row>
         <Row>
           <Col style={{padding:`0.5rem`,textAlign:'center'}}>
-            1987年生まれのサラリーマンです。
-            </Col>
+            時価総額10兆円越え企業勤務のサラリーマンです。
+          </Col>
         </Row>
         <Row>
           <Col style={{padding:`0.5rem`,textAlign:'center'}}>
-            時価総額10兆円越え企業に勤務しています。
-            </Col>
+            エンジニアです。
+          </Col>
         </Row>
         <Row>
           <Col style={{padding:`0.5rem`,textAlign:'center'}}>
-            資産運用/勉強/仕事/転職/婚活術について発信しています。
+            資産運用/勉強/仕事/転職/婚活術に加えて筋トレ/英語を毎日継続する方法ついて発信しています。
           </Col>
         </Row>
       </Col>
