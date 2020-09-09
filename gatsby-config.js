@@ -3,7 +3,7 @@ module.exports = {
     title: `バリキャリ夫婦雨宮のブログ`,
     description: `パワーカップルの資産運用/語学/仕事/転職/婚活を発信`,
     author: `@amamiya_couple`,
-    siteUrl: `https://yah-space.tech`,
+    siteUrl: `https://amamiyacouple.work/`,
   },
   plugins: [
     `gatsby-plugin-twitter`,
@@ -11,15 +11,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://yah-space.tech`,
+        siteUrl: `https://amamiyacouple.work/`,
         stripQueryString: true,
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt', // 追加
       options: {
-        host: 'https://yah-space.tech',
-        sitemap: 'https://yah-space.tech/sitemap.xml',
+        host: 'https://amamiyacouple.work/',
+        sitemap: 'https://amamiyacouple.work/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
