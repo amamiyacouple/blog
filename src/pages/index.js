@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Row style={{maxWidth:`960px`}}>
-      <img src={blogheaderImg} style={{marginBottom:`2rem`}} />
+      <img src={blogheaderImg} style={{maxHeight:'100%',maxWidth:'100%', marginBottom:`2rem`}} />
     </Row>
     <Row>
       <Col xs={12} md={12} style={{maxWidth:`960px`}}>
