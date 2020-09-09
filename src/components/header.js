@@ -5,9 +5,9 @@ import { Navbar, Nav, NavItem } from "react-bootstrap";
 import coupleImg from "../images/coupleheader2.jpg"
 
 const Header = ({ siteTitle }) => (
-  <Navbar bg="light" variant="light" expand="lg">
+  <Navbar bg="light" variant="light" expand="lg" style={{maxWidth:`960px`,textAlign:'center'}}>
     <Navbar.Brand as={Link} href="/">
-      <img src={coupleImg} style={{maxHeight:'640px',maxWidth:'320px', marginBottom:`2rem`}} /> 
+      <img src={coupleImg} style={{}} /> 
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
