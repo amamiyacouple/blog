@@ -2,11 +2,12 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
+import coupleImg from "../images/coupleheader2.jpg"
 
 const Header = ({ siteTitle }) => (
   <Navbar bg="light" variant="light" expand="lg">
     <Navbar.Brand as={Link} href="/">
-      {siteTitle}
+      <img src={coupleImg} style={{maxHeight:'100%',maxWidth:'100%', marginBottom:`2rem`}} /> 
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
