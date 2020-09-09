@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 //import header_wifeImg from "../images/header_wife.jpg"
 //import header_husbandImg from "../images/header_husband.jpg"
 import blogheaderImg from "../images/blogheader3.jpg"
-import twitter_husbandImg from "../images/icon_husband.png"
+import twitter_husbandImg from "../images/icon_husband.jpg"
 import twitter_wifeImg from "../images/icon_wife.jpg"
 //import jigyo1Img from "../images/jigyo1.jpg"
 //import jigyo2Img from "../images/jigyo2.jpg"
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Row style={{maxWidth:`960px`}}>
-      <img src={blogheaderImg} style={{marginBottom:`2rem`}} />
+      <img src={blogheaderImg} style={{maxHeight:'100%',maxWidth:'100%', marginBottom:`2rem`}} />
     </Row>
     <Row>
       <Col xs={12} md={12} style={{maxWidth:`960px`}}>
