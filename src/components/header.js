@@ -7,7 +7,7 @@ import coupleImg from "../images/coupleheader2.jpg"
 const Header = ({ siteTitle }) => (
   <Navbar bg="light" variant="light" expand="lg">
     <Navbar.Brand as={Link} href="/">
-      <img src={coupleImg} style={{maxHeight:'100%',maxWidth:'100%', marginBottom:`2rem`}} /> 
+      <img src={coupleImg} style={{maxHeight:'640px',maxWidth:'320px', marginBottom:`2rem`}} /> 
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

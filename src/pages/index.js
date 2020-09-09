@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 //import image from "../components/image"
 //import header_wifeImg from "../images/header_wife.jpg"
 //import header_husbandImg from "../images/header_husband.jpg"
-import blogheaderImg from "../images/blogheader3.jpg"
+//import blogheaderImg from "../images/blogheader3.jpg"
 import twitter_husbandImg from "../images/icon_husband.jpg"
 import twitter_wifeImg from "../images/icon_wife.jpg"
 //import jigyo1Img from "../images/jigyo1.jpg"
