@@ -9,6 +9,12 @@ module.exports = {
     `gatsby-plugin-twitter`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-theme-blog',
+      options: {
+        basePath: '/blog',
+      },
+    },
+    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://amamiyacouple.work/`,
