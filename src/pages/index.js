@@ -29,6 +29,9 @@ const IndexPage = ({ data }) => (
             <Card.Body>
               <Row>
                 <Col style={{textAlign:'left'}}>
+                  <Card.img>
+                    {node.frontmatter.image}
+                  </Card.img>
                   <Card.Title style={{fontWeight:'bold'}}>
                     <Link to={`/${node.fields.slug}`}>
                       {node.frontmatter.title}
@@ -147,7 +150,7 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY/MM/DD")
-            img {
+            image {
               childImageSharp {
                 fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid
