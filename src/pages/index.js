@@ -150,7 +150,6 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY/MM/DD")
-            image
             }
           }
           fields {
