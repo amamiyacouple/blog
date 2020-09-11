@@ -150,12 +150,7 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY/MM/DD")
-            image {
-              childImageSharp {
-                fluid(maxWidth: 960) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+            image
             }
           }
           fields {
