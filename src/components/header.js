@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
-import coupleImg from "../images/coupleheader2.jpg"
+//import coupleImg from "../images/coupleheader2.jpg"
 //<img src={coupleImg}/> 
 
 const Header = ({ siteTitle }) => (
