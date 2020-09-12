@@ -1,6 +1,7 @@
 ---
 title: "戦略的転職術"
 date: "2020-09-05"
+hero: ./header_husband.jpg
 ---
 
 戦略的転職術です。

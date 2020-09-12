@@ -1,7 +1,7 @@
 ---
 title: "時短仕事術"
 date: "2020-09-07"
-img: "naphthalene.jpg"
+hero: "naphthalene.jpg"
 ---
 
 時短仕事術です。
