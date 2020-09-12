@@ -31,7 +31,10 @@ const IndexPage = ({ data }) => (
               <Row>
                 <Col style={{textAlign:'left'}}>
                   <Card.img>
-                    {node.frontmatter.hero.childImageSharp.fluid}
+                  <Image
+                      className="posts__image"
+                      fluid={node.frontmatter.hero.childImageSharp.fluid}
+                    />
                   </Card.img>
                   <Card.Title style={{fontWeight:'bold'}}>
                     <Link to={`/${node.fields.slug}`}>
