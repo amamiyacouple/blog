@@ -3,6 +3,7 @@ import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
+import Image from "gatsby-image";
 //import image from "../components/image"
 //import header_wifeImg from "../images/header_wife.jpg"
 //import header_husbandImg from "../images/header_husband.jpg"
@@ -29,6 +30,9 @@ const IndexPage = ({ data }) => (
             <Card.Body>
               <Row>
                 <Col style={{textAlign:'left'}}>
+                  <Card.img>
+                    {node.frontmatter.hero.childImageSharp.fluid}
+                  </Card.img>
                   <Card.Title style={{fontWeight:'bold'}}>
                     <Link to={`/${node.fields.slug}`}>
                       {node.frontmatter.title}
@@ -147,7 +151,7 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY/MM/DD")
-            img {
+            hero {
               childImageSharp {
                 fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid

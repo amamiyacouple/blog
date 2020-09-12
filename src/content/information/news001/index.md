@@ -1,7 +1,7 @@
 ---
 title: "オススメ本"
 date: "2020-09-05"
-img: ./header_husband.jpg
+hero: ./header_husband.jpg
 ---
 
 オススメの本を紹介します。
