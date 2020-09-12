@@ -3,6 +3,7 @@ import { Row, Col, Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
+import Image from "gatsby-image";
 //import image from "../components/image"
 //import header_wifeImg from "../images/header_wife.jpg"
 //import header_husbandImg from "../images/header_husband.jpg"
@@ -18,6 +19,13 @@ import twitter_wifeImg from "../images/icon_wife.jpg"
 //<Row style={{maxWidth:`960px`}}>
 //<img src={blogheaderImg} style={{maxHeight:'100%',maxWidth:'100%', marginBottom:`2rem`}} />
 //</Row> 
+/*<Card.img>
+<Image
+    className="posts__image"
+    fluid={node.frontmatter.hero.childImageSharp.fluid}
+  />
+</Card.img>
+*/
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -147,7 +155,7 @@ query {
           frontmatter {
             title
             date(formatString: "YYYY/MM/DD")
-            img {
+            hero {
               childImageSharp {
                 fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid

@@ -1,6 +1,7 @@
 ---
 title: "Twiiter運用のススメ"
 date: "2020-09-06"
+hero: ./header_husband.jpg
 ---
 
 Twitter運用のススメです。

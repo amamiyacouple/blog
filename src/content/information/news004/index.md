@@ -1,6 +1,7 @@
 ---
 title: "絶対に外さない婚活戦略"
 date: "2020-09-05"
+hero: ./header_husband.jpg
 ---
 
 絶対に外さない婚活戦略です。
