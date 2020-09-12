@@ -19,6 +19,13 @@ import twitter_wifeImg from "../images/icon_wife.jpg"
 //<Row style={{maxWidth:`960px`}}>
 //<img src={blogheaderImg} style={{maxHeight:'100%',maxWidth:'100%', marginBottom:`2rem`}} />
 //</Row> 
+/*<Card.img>
+<Image
+    className="posts__image"
+    fluid={node.frontmatter.hero.childImageSharp.fluid}
+  />
+</Card.img>
+*/
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -30,12 +37,6 @@ const IndexPage = ({ data }) => (
             <Card.Body>
               <Row>
                 <Col style={{textAlign:'left'}}>
-                  <Card.img>
-                  <Image
-                      className="posts__image"
-                      fluid={node.frontmatter.hero.childImageSharp.fluid}
-                    />
-                  </Card.img>
                   <Card.Title style={{fontWeight:'bold'}}>
                     <Link to={`/${node.fields.slug}`}>
                       {node.frontmatter.title}
